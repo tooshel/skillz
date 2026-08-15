@@ -4,6 +4,8 @@ Notes from comparing the popular "agent skills" collections for Claude Code (and
 
 **👉 The write-up: [SKILLS-NOTES.md](SKILLS-NOTES.md)** — per-repo summaries, a comparison table, a recommendation, and a neutral evaluation prompt to reuse.
 
+**👉 The neutral prompt, actually run: [NEUTRAL-PROMPT.md](NEUTRAL-PROMPT.md)** — a criteria-only evaluation (measured idle token cost, auto-fire vs. user-invoked triggers, opinion fit, reversibility/maintenance) with a max-three-skills recommendation and per-skill pass/fail evidence for a one-week trial.
+
 ## What's (not) in this repo
 
 The three collections that were reviewed are cloned locally but gitignored — they're other people's repos. To recreate the working directory:
