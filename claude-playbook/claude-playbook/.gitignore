@@ -1,0 +1,42 @@
+# 🚫 .gitignore for projects using this Claude Code toolkit
+#
+# Rename to `.gitignore` (or paste into your existing one) when you drop
+# `.claude/` into a project. The principle: commit shared config + skills,
+# ignore anything personal or machine-local.
+
+# --- Claude Code: keep .claude/ but ignore local overrides ---
+.claude/settings.local.json
+.claude/.DS_Store
+.claude/**/.DS_Store
+
+# Memory written by the ~/.claude memory system (if you symlink it in)
+.claude/memory/
+
+# Anything you want to keep private from teammates but reachable locally
+.claude/private/
+
+# --- OS noise ---
+.DS_Store
+Thumbs.db
+
+# --- Editor noise ---
+.vscode/
+.idea/
+*.swp
+
+# --- Env / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Node / Bun / Python defaults — keep what fits your stack ---
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+.bun/
+__pycache__/
+*.pyc
+.venv/
+venv/
